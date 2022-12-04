@@ -3,7 +3,7 @@ body{
 }
 
 nav{
-  height: 1.8em;
+  height: 3.75em;
   background-color: black;
   margin: 0!Important;
 }
@@ -13,6 +13,7 @@ nav h1{
   font-size: 1.25em;
   font-family: "Comic Sans MS";
   padding: 0.1em 1em;
+  float:right;
 }
 
 nav a:not(.name-div a){
@@ -23,13 +24,21 @@ nav a:not(.name-div a){
   font-size: 1.5em;
 }
 
+nav .name-div{
+  padding: 0.75em;
+}
+
 nav a:hover:not(.name-div a){
   background-color: #39FF14;
   color: #333;
 }
 
-#myNavbar{
-  padding: 0;
+nav ul{
+  float:right;
+}
+
+nav li{
+  display: inline;
 }
 
 li .collapse{
@@ -69,7 +78,7 @@ h1{
 }
 
 .home-body img{
-  padding: 0!Important;
+  padding: 0;
 }
 
 .navbar-toggle{
@@ -80,9 +89,13 @@ h1{
   float: right!Important;
 }
 
-.heading, .header-special h1, .mnm-body h1{
+.heading, .mnm-body h1{
   font-size: 4em;
 }
+
+ .header-special h1{
+   font-size: 3.5em;
+ }
 
 .header h1{
   padding: 1.2em 0 0 0;
@@ -272,7 +285,7 @@ h1{
     width: 100%;
   }
   .home-body img{
-    padding: 1em 15em;
+    padding: 1em 12em;
   }
   .story-body div{
     width:100%;
@@ -316,11 +329,20 @@ h1{
   }
 }
 @media only screen and (max-width:600px){
-  nav{
-    height: 6em;
+  footer p {
+    padding-top: 15em;
   }
-  nav h1{
-
+  nav{
+    height: 15em;
+  }
+  nav ul{
+    float: none;
+    padding: 4em 0;
+    margin: 0;
+  }
+  nav li{
+    display: block;
+    padding: 1em;
   }
   nav a:not(.name-div a){
     width: 100%;
@@ -336,10 +358,12 @@ h1{
     padding: 1em 1.5em;
   }
   .story-body img{
-    width:400px;
+    margin: 0;
+    width: 375px;
+    height: auto;
   }
   .mnm-body .about{
-    height: 60em;
+    height: 65em;
   }
   .cloud{
     display: none;
@@ -370,5 +394,6 @@ h1{
   }
   .shop-item-body img{
     padding: 0;
+    height: 17em;
   }
 }
