@@ -1,0 +1,18 @@
+<%- include("header") -%>
+
+<div class="header">
+  <h1><%=item.itemName%></h1>
+</div>
+
+<div class="shop-item-body">
+  <img src="<%=item.image%>" alt="Its the image of the Item" height="300px">
+  <div>
+    <p><%= item.aboutItem%></p>
+    <h3><%= item.cost %></h3>
+    <h2>Contact:</h2>
+    <h4>Phone No. - <%= item.phoneNo %></h4>
+    <h4>Email - <%= item.email %></h4>
+  </div>
+</div>
+
+<%- include("footer") -%>
