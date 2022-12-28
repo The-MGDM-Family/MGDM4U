@@ -35,9 +35,9 @@ Both the meeting rooms are on the same floor number of different high rise build
   <h5>By Gunalan.S</h5>
   <h5>Please Like, Share and Comment...<br>Likes add the rating, Dislikes subtract the rating...</h5>
 
-  <h6><form action="/0/like" method="post"><button type="submit" onclick="add()">👍</button></form>
+  <h6><form action="/0-like" method="post"><button type="submit" onclick="add()">👍</button></form>
   <p class="likes"><%= likes %></p>
-  <form action="/0/dislike" method="post"><button type="submit" onclick="subs()">👎</button></form></h6>
+  <form action="/0-dislike" method="post"><button type="submit" onclick="subs()">👎</button></form></h6>
   <script>
     let likes = <%= likes %>;
     function add(){
