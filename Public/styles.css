@@ -5,11 +5,15 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-family: "Indie Flower"!Important;
   color: #fff;
+  margin: 0;
+  padding: 1em;
 }
 
 a, p, li{
   font-family: "Comfortaa"!Important;
   color: cyan;
+  margin: 0;
+  padding: 1em;
 }
 
 .home-body, .story-body, .subscribe-body, .update-body, .wwd {
