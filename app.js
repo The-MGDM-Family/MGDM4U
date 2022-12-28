@@ -18,7 +18,7 @@ let shopItems = [{
   cost:"₹200"
 }];
 
-let stories = [{ name: "the-mistake", likes: 0 }];
+let stories = [{ name: "the-mistake", likes: 0 }, { name: "the-johns-p1", likes: 0 }];
 
 app.set('view engine', 'ejs');
 
@@ -113,16 +113,22 @@ app.get("/the-mistake", function(req, res){
   });
 });
 
-app.post("/:storyNo/like", function(req, res){
-  let i = req.params.storyNo;
-  stories[i].likes = stories[i].likes + 1;
-  res.redirect("/novel-" + stories[i].name);
+app.get("/the-johns-p1", function(req, res){
+  res.render("the-johns-p1", {
+    likes: stories[1].likes
+  })
 });
 
-app.post("/:storyNo/dislike", function(req, res){
+app.post("/:storyNo-like", function(req, res){
+  let i = req.params.storyNo;
+  stories[i].likes = stories[i].likes + 1;
+  res.redirect(stories[i].name);
+});
+
+app.post("/:storyNo-dislike", function(req, res){
   let i = req.params.storyNo;
   stories[i].likes = stories[i].likes - 1;
-  res.redirect("/novel-" + stories[i].name);
+  res.redirect(stories[i].name);
 });
 
 app.listen(3000 || process.env.PORT, function(){
