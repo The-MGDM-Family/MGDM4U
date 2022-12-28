@@ -2,6 +2,16 @@ body{
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: "Indie Flower"!Important;
+  color: #fff;
+}
+
+a, p, li{
+  font-family: "Comfortaa"!Important;
+  color: cyan;
+}
+
 .home-body, .story-body, .subscribe-body, .update-body, .wwd {
   background-color: darkblue;
   color: cyan;
@@ -102,6 +112,10 @@ h6 button{
   border-radius: 3em;
   border: 0;
   background-color: darkgreen;
+}
+
+.home-body ul{
+  line-height: 2em;
 }
 
 .likes, .story-body form{
@@ -239,10 +253,6 @@ h6 button{
 @keyframes cloud-2 {
   from {left:0px;}
   to {left:1340px;}
-}
-
-.about_us_main_heading{
-  color:#F90716;
 }
 
 .about_us_headings{
