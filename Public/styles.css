@@ -32,7 +32,6 @@ a{
 }
 
 nav{
-  overflow: hidden;
   position: fixed;
   height: 3.75em;
   background-color: black;
