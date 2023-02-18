@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6{
   padding: 1em;
 }
 
-a, p, li{
+a, p, li, i{
   font-family: "Comfortaa"!Important;
   color: cyan;
   margin: 0;
