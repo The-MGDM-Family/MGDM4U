@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6{
   padding: 1em;
 }
 
-a, p, li, svg{
+a, p, li{
   font-family: "Comfortaa"!Important;
   color: cyan;
   margin: 0;
@@ -166,7 +166,7 @@ h6 button{
  }
 
 .header h1{
-  padding: 1.2em 0 0 0;
+  padding: 2em 0 0 0;
   font-size: 4em;
   text-align:center;
 }
@@ -225,13 +225,14 @@ h6 button{
 
 .header-special{
   padding: 0;
+  padding-top: 3.5em;
   background-image: url("header-bg.png");
 }
 
 .header{
   padding: 0;
   background-image: url("header-bg.png");
-  height:15em;
+  height:20em;
 }
 
 .cloud{
