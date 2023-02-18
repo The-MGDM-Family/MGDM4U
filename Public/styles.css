@@ -33,7 +33,7 @@ a{
 
 nav{
   overflow: hidden;
-  position: sticky;
+  position: fixed;
   height: 3.75em;
   background-color: black;
   margin: 0!Important;
@@ -77,7 +77,7 @@ footer{
   background-color: #333;
   color: #00FFAB;
   font-family: "Comfortaa";
-  min-height: 30em;
+  min-height: 35em;
 }
 
 footer h1{
