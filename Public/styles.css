@@ -370,7 +370,7 @@ h6 button{
   border-radius: 0!Important;
 }
 
-@media only screen and (max-width:1000px){
+/* @media only screen and (max-width:1000px){
   .home-wtext{
     float: none;
     width: 100%;
@@ -481,3 +481,4 @@ h6 button{
     height: 17em;
   }
 }
+ */
