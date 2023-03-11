@@ -1,17 +1,16 @@
 <%- include("header") -%>
 
 <div class="header">
-  <h1>Shopping</h1>
+  <h1>Artics</h1>
 </div>
 
 <div class="shop-body">
   <h3>Click 'More Info' to see cost and owner...</h3><br><br>
   <% items.forEach(function(item){ %>
     <% let itemName = item.itemName %>
-    <img src="<%=item.image%>" alt="Its the image of the Item" height="200px">
     <div>
       <h2><%=item.itemName%></h2>
-      <a href="/shopping-<%= item.itemName %>"><button type="button" name="mi-btn">More Info</button></a>
+      <a href="/artics/<%= item.itemName %>"><button type="button" name="mi-btn">More Info</button></a>
     </div>
   <% }); %>
 </div>
