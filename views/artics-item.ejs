@@ -1,0 +1,31 @@
+<%- include("header") -%>
+
+<div class="header">
+  <h1><%=item.itemName%></h1>
+</div>
+
+<div class="shop-item-body">
+  <div>
+    <h3>Required Info:</h3>
+    <% let a = <%=item.requiredInfo[]%>.lenght %>
+    <% for(let i = -1, i<=a, i++){ %>
+      <% let itemName = item.requiredInfo[i] %>
+      <div>
+        <h4><%=item.requiredInfo[i]%></h4>
+      </div>
+    <% } %>
+    <!-- <% items.requiredInfo.forEach(function(info){ %>
+      <% let itemName = info.itemName %>
+      <div>
+        <h4><%=item.itemName%>: </h4>
+      </div>
+    <% }); %> -->
+    <!-- <p><%= item.requiredInfo[] %></p> -->
+    <p>We will try and bring the best to you. Give the required info. Send the required info in one of the contacts. Info about cost will be given after required info is given.</p>
+    <h2>Contact:</h2>
+    <h4>Phone No. - <%= item.phoneNo %></h4>
+    <h4>Email - <%= item.email %></h4>
+  </div>
+</div>
+
+<%- include("footer") -%>
