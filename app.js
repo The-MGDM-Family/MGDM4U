@@ -1,4 +1,3 @@
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -9,16 +8,19 @@ const lodash = require("lodash");
 
 const app = express();
 
-let shopItems = [{
-  image: "decbottle.png",
-  itemName: "Decorative Bottle",
-  aboutItem: "A beautiful decorative glass bottle with a light inside it. It has a tree with pink colour leaves. There are grasses surrounding it. All of it is glass painted. It has a string light which makes it even more awesome.",
+let items = [{
+  itemName: "Painting",
+  requiredInfo: [{ info1: "Paper/Fabric" }, { info2: "Image to be painted." }],
   phoneNo: "+91 91485 48587",
-  email: "mugi.gunalan@gmail.com",
-  cost:"₹200"
+  email: "mugi.gunalan@gmail.com"
+}, {
+  itemName: "Name Shading",
+  requiredInfo: [{ info1: "Name to be shaded" }, { info2: "Light to dark level shading/Same level shading." }],
+  phoneNo: "+91 91485 48587",
+  email: "mugi.gunalan@gmail.com"
 }];
 
-let stories = [{ name: "the-mistake", likes: 0 }, { name: "the-johns-p1", likes: 0 }];
+let stories = [{ name: "the-mistake", likes: 0, dislikes: 0 }, { name: "the-johns-p1", likes: 0, dislikes: 0 }];
 
 app.set('view engine', 'ejs');
 
@@ -37,22 +39,22 @@ app.get("/mnm-bros", function(req, res){
   res.render("mnm-bros");
 });
 
-app.get("/shopping", function(req, res){
-  res.render("shopping", {
-    items: shopItems
+app.get("/artics", function(req, res){
+  res.render("artics", {
+    items: items
   });
 });
 
-app.get("/shopping-:itemName", function(req, res){
+app.get("/artics/:itemName", function(req, res){
   const requiredName = lodash.lowerCase(req.params.itemName);
   shopItems.forEach(function(item){
     const eachItemName = lodash.lowerCase(item.itemName);
     if (requiredName === eachItemName) {
-      res.render("shop-item", {
+      res.render("artics-item", {
         item:item
       });
     } else {
-      res.render("shop-item", {
+      res.render("artics-item", {
         item:"Not Found"
       });
     }
@@ -109,25 +111,27 @@ app.get("/latest-update", function(req, res){
 
 app.get("/the-mistake", function(req, res){
   res.render("the-mistake", {
-    likes: stories[0].likes
+    likes: stories[0].likes,
+    dislikes: stories[0].dislikes
   });
 });
 
 app.get("/the-johns-p1", function(req, res){
   res.render("the-johns-p1", {
-    likes: stories[1].likes
+    likes: stories[1].likes,
+    dislikes: stories[1].dislikes
   })
 });
 
-app.post("/:storyNo-like", function(req, res){
+app.post("/:storyNo/like", function(req, res){
   let i = req.params.storyNo;
   stories[i].likes = stories[i].likes + 1;
   res.redirect(stories[i].name);
 });
 
-app.post("/:storyNo-dislike", function(req, res){
+app.post("/:storyNo/dislike", function(req, res){
   let i = req.params.storyNo;
-  stories[i].likes = stories[i].likes - 1;
+  stories[i].dislikes = stories[i].dislikes + 1;
   res.redirect(stories[i].name);
 });
 
