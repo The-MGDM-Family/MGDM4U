@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
 }
@@ -14,7 +18,6 @@ a, p, li{
   color: cyan;
   margin: 0;
   padding: 1em;
-  min-width: 
 }
 
 .home-body, .story-body, .subscribe-body, .update-body, .wwd {
@@ -125,18 +128,6 @@ h6 button{
   display: inline;
 }
 
-.gth-h3{
-  margin: 0;
-  text-align: right;
-  padding: 1em;
-}
-
-.gth-link{
-  color: #fff;
-  text-decoration: underline;
-  padding: 0;
-}
-
 .update-body{
   min-height: 50em;
 }
@@ -153,18 +144,10 @@ h6 button{
   float: right!Important;
 }
 
-.heading, .mnm-body h1{
-  font-size: 4em;
-}
-
 .heading{
+  font-size: 4em;
   padding: 0.5em;
 }
-
- .header-special h1{
-   font-size: 4em;
-   padding: 0.5em;
- }
 
 .header h1{
   padding: 2em 0 0 0;
@@ -224,43 +207,10 @@ h6 button{
   font-size: 1.25em;
 }
 
-.header-special{
-  padding: 0;
-  padding-top: 3.5em;
-  background-image: url("header-bg.png");
-}
-
 .header{
   padding: 0;
   background-image: url("header-bg.png");
   height:20em;
-}
-
-.cloud{
-  height:100px;
-  width:150px;
-}
-
-.cloud-1-img{
-  position: relative;
-  animation:cloud-1 20s infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-1 {
-  from {left:0px;}
-  to {left:1340px;}
-}
-
-.cloud-2-img{
-  position: relative;
-  animation:cloud-2 25s infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-2 {
-  from {left:0px;}
-  to {left:1340px;}
 }
 
 .about_us_headings{
@@ -269,7 +219,7 @@ h6 button{
 }
 
 .our_logo{
-  width:500px;
+  width:50%;
   height:auto;
 }
 
@@ -343,7 +293,7 @@ h6 button{
 }
 
 .subscribe-body input{
-  width: 30em;
+  width: 25%;
   height: 2em;
   border-radius: 0.5em;
   background-color: rgb(0, 0, 0);
@@ -357,7 +307,7 @@ h6 button{
   font-family: "comfortaa";
   font-size: 1em;
   height: 2em;
-  width: 25.5em;
+  width: 20%;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
@@ -370,116 +320,3 @@ h6 button{
 .l-input{
   border-radius: 0!Important;
 }
-
-/* @media only screen and (max-width:1000px){
-  .home-wtext{
-    float: none;
-    width: 100%;
-  }
-  .home-body img{
-    padding: 1em 12em;
-  }
-  .story-body div{
-    width:100%;
-  }
-  @keyframes cloud-1 {
-    from {left:0px;}
-    to {left:800px;}
-  }
-  @keyframes cloud-2 {
-    from {left:0px;}
-    to {left:800px;}
-  }
-  .our_logo_div{
-    width:100%;
-    text-align:center;
-  }
-  .mnm-body .about{
-    height: 60em;
-  }
-  .wwd-div h1{
-    font-size: 30px!Important;
-  }
-  .wwd-div p{
-    font-size: 15px!Important;
-  }
-  .shop-body{
-    height: 30em;
-  }
-  .shop-body img{
-    padding: 1em 12em;
-  }
-  .shop-item-body{
-    height: 40em;
-  }
-  .shop-item-body div{
-    float: none;
-    width: 100%;
-  }
-  .shop-item-body img{
-    padding: 1em 8em;
-  }
-}
-@media only screen and (max-width:600px){
-  footer p {
-    padding-top: 15em;
-  }
-  nav{
-    height: 15em;
-  }
-  nav ul{
-    float: none;
-    padding: 4em 0;
-    margin: 0;
-  }
-  nav li{
-    display: block;
-    padding: 1em;
-  }
-  .header{
-    height: 20em;
-  }
-  .home-body img{
-    padding: 1em 1.5em;
-  }
-  .story-body img{
-    margin: 0;
-    width: 375px;
-    height: auto;
-  }
-  .mnm-body .about{
-    height: 65em;
-  }
-  .cloud{
-    display: none;
-  }
-  .main_head-div{
-    margin-top: 2em;
-  }
-  .main_head-div .main_head{
-    font-size: 3.5em!Important;
-  }
-  .carousel{
-    height:1000px;
-  }
-  .our_logo_div{
-    width:100%;
-    text-align:center;
-  }
-  .our_logo, .wwd-img{
-    width:300px;
-    height: 200px;
-  }
-  .wwd-img{
-    float: none;
-    margin: 0;
-  }
-  .shop-body img{
-    padding: 1em 2em;
-  }
-  .shop-item-body img{
-    padding: 0;
-    height: 17em;
-  }
-}
- */
