@@ -269,11 +269,6 @@ h6 button{
   font-family: "Indie Flower";
 }
 
-.shop-body div{
-  float: right;
-  width: 70%;
-}
-
 .shop-body button{
   background-color: blue;
   border-radius: 5em;
