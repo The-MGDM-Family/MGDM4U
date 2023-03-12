@@ -47,7 +47,7 @@ app.get("/artics", function(req, res){
 
 app.get("/artics/:itemName", function(req, res){
   const requiredName = lodash.lowerCase(req.params.itemName);
-  shopItems.forEach(function(item){
+  items.forEach(function(item){
     const eachItemName = lodash.lowerCase(item.itemName);
     if (requiredName === eachItemName) {
       res.render("artics-item", {
