@@ -14,13 +14,13 @@
         <h4><%=item.requiredInfo[i]%></h4>
       </div>
     <% } %> -->
-    <% items.requiredInfo.forEach(function(info){ %>
-      <div>
-        <ul>
+    <div>
+      <ul>
+        <% items.requiredInfo.forEach(function(info){ %>
           <li><h4>info</h4></li>
-        </ul>
-      </div>
-    <% }); %>
+        <% }); %>
+      </ul>
+    </div>
     <p>We will try and bring the best to you. Give the required info. Send the required info in one of the contacts. Info about cost will be given after required info is given.</p>
     <h2>Contact:</h2>
     <h4>Phone No. - <%= item.phoneNo %></h4>
