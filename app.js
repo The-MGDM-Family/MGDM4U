@@ -45,7 +45,7 @@ app.get("/artics", function(req, res){
   });
 });
 
-app.get("/artics/:itemName", function(req, res){
+app.get("/artics-:itemName", function(req, res){
   const requiredName = lodash.lowerCase(req.params.itemName);
   items.forEach(function(item){
     const eachItemName = lodash.lowerCase(item.itemName);
