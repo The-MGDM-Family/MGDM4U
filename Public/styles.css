@@ -85,6 +85,9 @@ nav ul{
 
 nav button{
   float:right;
+  padding:1em;
+  height:1.5em;
+  width:1.5em;
 }
 
 .display-block{
