@@ -1,9 +1,9 @@
 @media only screen and (max-width: 600px) {
-  img{
+  home-body img{
     width:100%;
     height:auto;
   }
-  .text{
+  .home-wtext{
     width:100%;
     height:auto;
   }
@@ -75,12 +75,16 @@ nav a:hover:not(.name-div a){
   color: #333;
 }
 
-nav ul{
-  float:right;
+.btn-clicked{
+  height: 7.5em;
 }
 
-nav li{
-  display: inline;
+nav ul{
+  display: none;
+}
+
+.display-block{
+  display: block;
 }
 
 footer{
