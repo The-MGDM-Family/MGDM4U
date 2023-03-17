@@ -83,6 +83,10 @@ nav ul{
   display: none;
 }
 
+nav button{
+  float:right;
+}
+
 .display-block{
   display: block;
 }
