@@ -6,13 +6,15 @@
 
 <div class="shop-body">
   <h3>Click 'More Info' to see cost and owner...</h3><br><br>
-  <% items.forEach(function(item){ %>
+  <table>
+   <% items.forEach(function(item){ %>
     <% let itemName = item.itemName %>
-    <div>
-      <h2><%=item.itemName%></h2>
-      <a href="/artics-<%= item.itemName %>"><button type="button" name="mi-btn">More Info</button></a>
-    </div>
-  <% }); %>
+    <tr>
+     <td><h2><%=item.itemName%></h2></td>
+     <td><a href="/artics-<%= item.itemName %>"><button type="button" name="mi-btn">More Info</button></a></td>
+    </tr>
+   <% }); %>
+  </table>
 </div>
 
 <%- include("footer") -%>
