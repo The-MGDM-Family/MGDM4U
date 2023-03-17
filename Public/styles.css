@@ -50,7 +50,7 @@ nav{
   width: 100%;
 }
 
-.name-div a{
+.name-div h1{
   color:#fff;
   font-size: 1.25em;
   font-family: "Indie Flower";
@@ -83,11 +83,15 @@ nav ul{
   display: none;
 }
 
-nav button{
-  float:right;
-  padding:1em;
+nav button img{
   height:1.5em;
   width:1.5em;
+}
+
+nav button{
+  float:right;
+  margin: 1em;
+  background-color: #333;
 }
 
 .display-block{
