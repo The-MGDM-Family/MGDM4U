@@ -50,7 +50,7 @@ nav{
   width: 100%;
 }
 
-nav h1{
+.name-div a{
   color:#fff;
   font-size: 1.25em;
   font-family: "Indie Flower";
