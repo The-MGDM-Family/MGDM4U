@@ -61,10 +61,6 @@ app.get("/artics-:itemName", function(req, res){
   });
 });
 
-app.get("/latest-update", function(req, res){
-  res.render("update");
-});
-
 // app.get("/subscribe", function(req, res){
 //   res.render("subscribe");
 // });
