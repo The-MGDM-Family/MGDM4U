@@ -4,6 +4,7 @@
     height:auto;
   }
   .home-wtext{
+    float: none;
     width:100%;
     height:auto;
   }
@@ -92,6 +93,7 @@ nav button{
   float:right;
   margin: 1em;
   background-color: #333;
+  border: 0;
 }
 
 .display-block{
