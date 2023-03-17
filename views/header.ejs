@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Indie+Flower&display=swap">
   </head>
   <body>
 
@@ -18,7 +18,7 @@
     <a class="navbar-brand" href="/home"><h1>MGDM4U</h1></a>
   </div>
   <div>
-    <button><img href="main_menu.png"></button>
+    <button onclick="navBtn()"><img href="main_menu.png"></button>
      <ul>
        <li><a href="/home">🏠</a></li>
        <li><a href="/mnm-bros">{}</a></li>
@@ -26,3 +26,10 @@
      </ul>
   </div>
 </nav>
+
+<script>
+navBtn(){
+  document.querySelecter("nav ul").classList.toggle("display-block");
+  document.querySelecter("nav").classList.toggle("btn-clicked");
+} 
+</script>
