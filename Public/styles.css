@@ -80,8 +80,18 @@ nav a:hover:not(.name-div a){
   height: 7.5em;
 }
 
+.float-right{
+  float: right;
+  padding-right: 2.5em;
+}
+
 nav ul{
   display: none;
+}
+
+nav li{
+  list-style: none;
+  display: inline;
 }
 
 nav button img{
