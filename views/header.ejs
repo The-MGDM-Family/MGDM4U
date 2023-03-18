@@ -21,15 +21,15 @@
     <button onclick="navBtn()"><img src="main-menu.png"></button>
      <ul>
        <li><a href="/home">🏠</a></li>
-       <li><a href="/mnm-bros">{}</a></li>
-       <li><a href="/artics">🎨</a></li>
+       <li class="center"><a href="/mnm-bros">{}</a></li>
+       <li class="float-right"><a href="/artics">🎨</a></li>
      </ul>
   </div>
 </nav>
 
 <script>
 function navBtn(){
-  document.querySelector("nav").setAttribute("style", "height:7.5em");
-  document.querySelector("nav ul").setAttribute("style", "display:block");
+  document.querySelector("nav").toggleAttribute("class", "btn-clicked");
+  document.querySelector("nav ul").toggleAttribute("class", "display-block");
 } 
 </script>
