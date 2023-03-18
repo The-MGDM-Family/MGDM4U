@@ -1,11 +1,10 @@
 @media only screen and (max-width: 600px) {
   home-body img{
-    width:100%;
-    height:auto;
+    padding: 0 25%;
   }
   .home-wtext{
     float: none;
-    width:100%;
+    width:100%!Important;
     height:auto;
   }
 }
