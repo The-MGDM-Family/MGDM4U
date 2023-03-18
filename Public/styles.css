@@ -111,8 +111,12 @@ nav button{
   border: 0;
 }
 
-.display-block{
+.show{
   display: block;
+}
+
+.hide{
+  display: none;
 }
 
 footer{
