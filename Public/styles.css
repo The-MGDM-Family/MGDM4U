@@ -85,6 +85,10 @@ nav a:hover:not(.name-div a){
   padding-right: 2.5em;
 }
 
+.center{
+  padding-left: 35%;
+}
+
 nav ul{
   display: none;
 }
