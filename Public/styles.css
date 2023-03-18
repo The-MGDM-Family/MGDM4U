@@ -91,6 +91,7 @@ nav a:hover:not(.name-div a){
 
 nav ul{
   display: none;
+  padding: 3.75em 0 0 0;
 }
 
 nav li{
